@@ -24,10 +24,10 @@ ru:
         name: "Название"
         numcode: ISO-код
       spree/credit_card:
-        base:
+        base: ''
         cc_type: "Тип кредитной карты"
         month: "Месяц"
-        name:
+        name: "Имя"
         number: "Номер"
         verification_value: "Значение проверки"
         year: "Год"
@@ -96,7 +96,6 @@ ru:
         usage_limit: "Лимит использования"
       spree/promotion_category:
         name: "Название"
-        code: "Код"
       spree/property:
         name: "Название"
         presentation: "Представление"
@@ -106,17 +105,19 @@ ru:
         amount: "Сумма"
       spree/role:
         name: "Название"
+      spree/shipment:
+        number: Number
       spree/state:
         abbr: "Аббревиатура"
         name: "Название"
       spree/state_change:
-        state_changes:
-        state_from:
-        state_to:
-        timestamp:
-        type:
-        updated:
-        user:
+        state_changes: State changes
+        type: Type
+        state_from: State from
+        state_to: State to
+        user: User
+        timestamp: Timestamp
+        updated: Updated
       spree/store:
         mail_from_address: "Отсылать почту как"
         meta_description: Meta-описание
@@ -1030,14 +1031,14 @@ ru:
         description: "Создаёт промо-корректировки для заказа"
         name: "Создать корректировку"
       create_item_adjustments:
-        description:
-        name:
+        description: "Создаёт промо-корректировки на единицу"
+        name: "Создать корректировку на еденицу"
       create_line_items:
         description: "Заполняет корзину указанным количеством вариантов"
         name: "Создать элемент заказа"
       free_shipping:
-        description:
-        name:
+        description: "Доставка всего заказа бесплатна"
+        name: "Бесплатная доставка"
     promotion_actions: "Акции"
     promotion_form:
       match_policies:
@@ -1055,17 +1056,17 @@ ru:
         description: "Покупатель должен был попасть на указанную страницу"
         name: "Страница"
       one_use_per_user:
-        description:
-        name:
+        description: Только один на пользователя
+        name: Один на руки
       option_value:
-        description:
-        name:
+        description: Заказ включаетспецифичные варианты продукта
+        name: Варианты продукта
       product:
         description: "Заказ включает указанные товары"
         name: "Товары"
       taxon:
-        description:
-        name:
+        description: Заказ включает продукты из определённого таксона
+        name: Таксон
       user:
         description: "Доступно только для указанных пользователей"
         name: "Пользователи"
